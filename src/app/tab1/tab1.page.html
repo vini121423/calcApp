@@ -11,12 +11,12 @@
     <ion-row>
       <ion-col size="4">
         <ion-item>
-          <ion-input [(ngModel)]="n1" placeholder="Nº"> </ion-input>
+          <ion-input [(ngModel)]="n1" placeholder="Nº" type="number"> </ion-input>
         </ion-item>
       </ion-col>
       <ion-col size="4">
         <ion-item>
-          <ion-input [(ngModel)]="n2" placeholder="Nº"> </ion-input>
+          <ion-input [(ngModel)]="n2" placeholder="Nº" type="number"> </ion-input>
         </ion-item>
       </ion-col>
       <ion-col size="4">
@@ -25,30 +25,44 @@
         </ion-item>
       </ion-col>
     </ion-row>
+  </ion-grid>
 
-
+  <ion-grid>
     <ion-row>
-      <ion-col size="2" class="coluna">
+      <ion-col size="5" class="coluna">
         <ion-button color="light" class="botoes" (click)="somar()">
           <ion-icon name="add-outline" class="icone"></ion-icon>
         </ion-button>
       </ion-col>
-      <ion-col size="2" class="coluna">
+      <ion-col size="5" class="coluna">
         <ion-button color="light" class="botoes" (click)="subtrair()">
           <ion-icon name="remove-outline" class="icone"></ion-icon>
         </ion-button>
       </ion-col>
     </ion-row>
+  </ion-grid>
 
+
+  <ion-grid>
     <ion-row>
-      <ion-col size="2" class="coluna">
+      <ion-col size="5" class="coluna">
         <ion-button color="light" class="botoes" (click)="dividir()">
           <ion-icon name="cut-outline" class="icone"></ion-icon>
         </ion-button>
       </ion-col>
-      <ion-col size="2" class="coluna">
+      <ion-col size="5" class="coluna">
         <ion-button color="light" class="botoes" (click)="multiplicar()">
           <ion-icon name="close-outline" class="icone"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="11" class="coluna">
+        <ion-button color="danger" class="botoes" (click)="limpar()">
+          <ion-icon name="close-circle-outline" class="icone"></ion-icon>
         </ion-button>
       </ion-col>
     </ion-row>
